@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(238, 238, 238);
+        }
+
+        .title{
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .subtitle{
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .whole{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .filter{
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .category{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .leftcard{
+            border: 0;
+            border-radius: 10px;
+            background-color: white;
+            padding: 15px;
+            width: 250px;
+            height: 100vh;
+            margin-right: 0;
+            
+        }
+
+        .card-content{
+            width:280px;
+            border-radius: 10px;
+            background-color: white;
+            transition: 0.3s;
+        }
+
+        .card-content :hover{
+            transform: scale(1.05);
+        }
+        
+        .smallcard{
+            padding: 16px;
+        }
+
+        .rightcard{
+            border: 0;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            }
+
+        img{
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            
+        }
+
+        .minititle{
+            margin: 0;
+        }
+
+        .price{
+            color: orangered;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .description{
+            margin-top: 0px;
+            color: grey;
+            font-size: 12px;
+        }
+
+        button{
+            border: 0;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: deepskyblue;
+            color: white;
+            width: 100%;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <h1 class="title">Our Products</h1>
+    <p class="subtitle">Explore our wide range of high-quality products designed to make your life better.</p>
+
+    <div class="whole">
+
+        <div class="leftcard">
+            <h2 class="filter">Filter Products</h2>
+            <hr>
+            <p class="category">Categories</p>
+            <input type="checkbox">All Products<br>
+            <input type="checkbox">Electronics<br>
+            <input type="checkbox">Clothing<br>
+            <input type="checkbox">Home & Kitchen<br>
+            <input type="checkbox">Sports & Outdoors<br>
+
+            <p class="category">Price Range</p>
+            <input type="checkbox">Under $25<br>
+            <input type="checkbox">$25 - $50<br>
+            <input type="checkbox">$50 - $100<br>
+            <input type="checkbox">$100 - $200<br>
+            <input type="checkbox">$200 & Above<br>
+
+        </div>
+
+        <div class="rightcard">
+            <div class="card-content">
+                <img src="https://placehold.co/300x200" alt="image">
+                    <div class="smallcard">
+                        <h3 class="minititle">Wireless Headphones</h3>
+                        <h4 class="price">$129.99</h4>
+                        <p class="description">Premium wireless headphones with noise cancellation and 30-hour battery life.</p>
+                        <button>Add to Cart</button>
+
+                    </div>
+            </div>
+
+            <div class="card-content">
+                <img src="https://placehold.co/300x200" alt="image">
+                    <div class="smallcard">
+                        <h3 class="minititle">Smart Watch</h3>
+                        <h4 class="price">$199.99</h4>
+                        <p class="description">Track your fitness, receive notifications, and more with this feature-packed smart watch.</p>
+                        <button>Add to Cart</button>
+
+                    </div>
+            </div>
+
+            <div class="card-content">
+                <img src="https://placehold.co/300x200" alt="image">
+                    <div class="smallcard">
+                        <h3 class="minititle">Bluetooth Speaker</h3>
+                        <h4 class="price">$79.99</h4>
+                        <p class="description">Portable Bluetooth speaker with amazing sound quality and 12-hour battery life.</p>
+                        <button>Add to Cart</button>
+
+                    </div>
+            </div>
+
+            <div class="card-content">
+                <img src="https://placehold.co/300x200" alt="image">
+                    <div class="smallcard">
+                        <h3 class="minititle">Running Shoes</h3>
+                        <h4 class="price">$89.99</h4>
+                        <p class="description">Lightweight and comfortable running shoes for your daily workout routine.</p>
+                        <button>Add to Cart</button>
+
+                    </div>
+            </div>
+
+            <div class="card-content">
+                <img src="https://placehold.co/300x200" alt="image">
+                    <div class="smallcard">
+                        <h3 class="minititle">Coffee Maker</h3>
+                        <h4 class="price">$59.99</h4>
+                        <p class="description">Automatic coffee maker taht brews delicious coffee with the press of a button.</p>
+                        <button>Add to Cart</button>
+
+                    </div>
+            </div>
+
+            <div class="card-content">
+                <img src="https://placehold.co/300x200" alt="image">
+                    <div class="smallcard">
+                        <h3 class="minititle">Backpack</h3>
+                        <h4 class="price">$49.99</h4>
+                        <p class="description">Durable backpack with multiple compartments, perfect for school or travel.</p>
+                        <button>Add to Cart</button>
+
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

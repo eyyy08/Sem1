@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container > p{
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .inner-box > p{
+            color: white;
+            background-color: blue;
+            padding: 10px;
+        }
+
+        p + p{
+            color: red;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Combinator Selectors Example</h1>
+    <div class="container">
+        
+        <p>First paragraph in container</p>
+        
+        <div class="inner-box">
+            <p>Paragraph inside inner-box</p>
+        </div>
+        
+        <p>Second paragraph in container</p>
+        <p>Third paragraph in container</p>
+
+    </div>
+
+    <p>Paragraph outside container</p>
+    
+</body>
+</html>

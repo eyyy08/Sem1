@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Exercise</title>
+    <style>
+        body{
+            margin: 0;
+            font-size: 16px;
+        }
+
+        html{
+            font-size: 16px;
+        }
+        
+        .sticky-nav{
+            background-color: rgb(5, 159, 159);
+            position: sticky;
+            padding: 2px;          
+            top: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        #section1{
+            background-color: #f0f0f0;
+            text-align: center;
+            min-height: 100vh;
+            padding: 300px;
+        }
+
+        #section2{
+            background-color: gray;
+            text-align: center;
+            min-height: 100vh;
+            padding: 300px;
+        }
+
+        #section3{
+            background-color: lightcyan;
+            text-align: center;
+            min-height: 100vh;
+            padding: 300px;
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+
+        h1{
+            color: white;
+            background-color: darkcyan;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        footer{
+            text-align: center;
+            background-color: darkcyan;
+            margin: 0;
+            padding: 2px;
+            color: white;
+            position: sticky;
+            bottom: 0;
+        }
+
+        .list{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            list-style: none;
+        }
+
+        a:active{
+            background-color: burlywood;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Title</h1>
+    </header>
+
+    <nav class="sticky-nav">
+        <ul class="list">
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1" class="content-section">
+        <h2>Section 1</h2>
+        <hr>
+        <p>Content for section 1...</p>
+
+    </section>
+
+    <section id="section2" class="content-section">
+        <h2>Section 2</h2>
+        <hr>
+        <p>Content for section 2...</p>
+
+    </section>
+
+    <section id="section3" class="content-section">
+        <h2>Section 3</h2>
+        <hr>
+        <p>Content for section 3...</p>
+
+    </section>
+
+    <footer>
+        <p>Footer content</p>
+    </footer>
+    
+</body>
+</html>

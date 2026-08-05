@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            margin: 0;
+            background-color: aliceblue;
+        }
+        
+        .fixed-header{
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 300;
+            padding: 0 15px;
+        }
+
+    
+
+        .fixed-header ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .logo{
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+
+        .fixed-header a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .page-container{
+            padding: 20px;
+            padding-top: 100px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .sticky-sidebar{
+            background-color: white;
+            padding: 20px;
+            height: fit-content;
+            border-radius: 8px;
+            position: sticky;
+            top: 100px;
+            width: 15%;
+        }
+
+        .sticky-sidebar a{
+            text-decoration: none;
+            color: darkcyan
+        }
+
+        .sticky-sidebar ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sticky-sidebar h2{
+            border-bottom: solid #333;
+            color: darkcyan;
+        }
+
+        .content{
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+        }
+
+        .overlapping-section{
+            background-color: aliceblue;
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            position: relative;
+            border: 2px dotted #ddd;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1{
+            background-color: red;
+            top: 10px;
+            left: 40px;
+            z-index: 1;
+        }
+
+        .box2{
+            background-color: burlywood;
+            top: 50px;
+            left: 80px;
+            z-index: 2;
+        }
+
+        .box3{
+            background-color: hotpink;
+            top: 90px;
+            left: 120px;
+            z-index: 3;
+        }
+
+        .floating-button{
+            background-color: lightblue;
+            border: none;
+            width: 40px;
+            height: 40px;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            position: sticky;
+            bottom: 20px;
+            left: 1400px;
+            z-index: 200;
+        }
+
+        footer {
+            background-color: #333;
+            width: 100%;
+            padding: 5px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="logo">Site Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="page-container">
+        <aside class="sticky-sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+        
+        <main class="content">
+            <h1>Main Content</h1>
+            
+            <div class="overlapping-section">
+                <!-- Create overlapping elements with z-index -->
+                <div class="box box1">Box 1</div>
+                <div class="box box2">Box 2</div>
+                <div class="box box3">Box 3</div>
+            </div>
+            
+            <p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+						<p>This is additional content to create scrolling.</p>
+        </main>
+    </div>
+    
+    <button class="floating-button">+</button>
+    
+    <footer>
+        <p>Footer content</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            border: 2px solid blue;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .green{
+            border: 2px solid green;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .password{
+            background-color: yellow;
+        }
+
+        .red-link{
+            color: red;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+        .normal-link{
+            display: block;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors Example</h1>
+
+    <h2>Form Inputs</h2>
+    <input type="text" class="blue" placeholder="Enter your name">
+    <input type="email" class="green" placeholder="Enter your email">
+    <input type="password" class="password" placeholder="Create password">
+    
+    <h2>Links</h2>
+    <a class="red-link" href="https://example.org/page">Example.org page (has "example" in href, so red)</a>
+    <a class="normal-link" href="https://test.com">Test.com (normal styling)</a>
+    <a class="red-link" href="https://example.org/page">Example.org page (has "example" in href, so red)</a>
+</body>
+</html>
