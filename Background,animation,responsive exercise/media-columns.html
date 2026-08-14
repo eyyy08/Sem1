@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card {
+        width: 300px;
+        height: fit-content;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px gray;
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 768px) {
+        section {
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+
+        .card {
+          width: 200px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        section {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Layout Columns</h1>
+
+    <section>
+      <article class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5q5xaq4mREHN2A2BNFff_aXw5TLfNQ5bz2JtEDE4ZH89TSJ0753Pli2A&s=10"
+          alt="image"
+        />
+        <div class="card-content">
+          <h1>Article One</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            minus maxime laborum tempora praesentium beatae. Commodi laudantium
+            voluptatem porro odit non consequuntur tempora ad facere quaerat
+            necessitatibus, praesentium totam assumenda?
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_P4oO3O2iTVgxs9p8oC3GRvBRTY-grZUdegX1E70FkcCiSKlzDtN9hOSm&s=10"
+          alt="image"
+        />
+        <div class="card-content">
+          <h1>Article Two</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            minus maxime laborum tempora praesentium beatae. Commodi laudantium
+            voluptatem porro odit non consequuntur tempora ad facere quaerat
+            necessitatibus, praesentium totam assumenda?
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVV_pGWETbVDJPp5Lm8ti7OUGDahLRLxjNDnvuBtwYANNsJRsk1WcXuLU&s=10"
+          alt="image"
+        />
+        <div class="card-content">
+          <h1>Article Three</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            minus maxime laborum tempora praesentium beatae. Commodi laudantium
+            voluptatem porro odit non consequuntur tempora ad facere quaerat
+            necessitatibus, praesentium totam assumenda?
+          </p>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
