@@ -14,3 +14,5 @@ const greeting =
   " that I am a student.";
 
 console.log(greeting);
+
+console.log(`Hello my name is ${fullName}, iam ${age}`);

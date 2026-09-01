@@ -2,9 +2,10 @@ function calculateArea(length, width) {
   return length * width;
 }
 
-console.log(calculateArea(5, 5));
-console.log(calculateArea(5, 10));
-console.log(calculateArea(10, 10));
+// Call calculateArea three times with different values
+console.log("Area: " + calculateArea(5, 5));
+console.log("Area: " + calculateArea(5, 10));
+console.log("Area: " + calculateArea(10, 10));
 
 function checkTemperature(temperature) {
   if (temperature > 30) {
@@ -14,5 +15,6 @@ function checkTemperature(temperature) {
   }
 }
 
+// Call chechTemperature twice with different values
 console.log(checkTemperature(35));
 console.log(checkTemperature(25));
