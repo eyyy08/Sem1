@@ -1,4 +1,3 @@
-// Get the input fields, buttons, and result paragraph
 const num1 = document.getElementById("num1");
 const num2 = document.getElementById("num2");
 
