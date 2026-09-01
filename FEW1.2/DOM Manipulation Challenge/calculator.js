@@ -28,26 +28,26 @@ add.addEventListener("click", function () {
   const number1 = Number(num1.value);
   const number2 = Number(num2.value);
 
-  result.textContent = "Result: " + addition(number1, number2);
+  result.textContent = "Answer: " + addition(number1, number2);
 });
 
 subtract.addEventListener("click", function () {
   const number1 = Number(num1.value);
   const number2 = Number(num2.value);
 
-  result.textContent = "Result: " + subtraction(number1, number2);
+  result.textContent = "Answer: " + subtraction(number1, number2);
 });
 
 multiply.addEventListener("click", function () {
   const number1 = Number(num1.value);
   const number2 = Number(num2.value);
 
-  result.textContent = "Result: " + multiplication(number1, number2);
+  result.textContent = "Answer: " + multiplication(number1, number2);
 });
 
 divide.addEventListener("click", function () {
   const number1 = Number(num1.value);
   const number2 = Number(num2.value);
 
-  result.textContent = "Result: " + division(number1, number2);
+  result.textContent = "Answer: " + division(number1, number2);
 });
